@@ -1,4 +1,5 @@
 // Testimonios
+
 const testimonials = [
     {
         name: 'Pedro R.',
@@ -57,6 +58,7 @@ const nextButton = document.getElementById('next-btn');
 let index = 0;
 
 function displayTestimonial() {
+    setInterval(nextTestimonial, 5000);
     const testimonial = testimonials[index];
     testimonialsContainer.innerHTML = `
         <div class="testimonial">

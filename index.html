@@ -22,9 +22,15 @@
         <a href="#registrate">Regístrate</a>
     </nav>
 
-    <div class="container" id="inicio">
-        <h2>Bienvenido a MyEvent</h2>
-        <!-- Contenido de la sección de inicio -->
+    <div class="inicio" id="inicio">
+        <div class="inicio-content">
+            <h2>Bienvenido a MyEvent</h2>
+            <p>La creación de una aplicación web para la venta de entradas a conciertos, eventos, discotecas y otros
+                espectáculos es un proyecto que requiere atención meticulosa para satisfacer las necesidades tanto de
+                los usuarios finales como de los organizadores de eventos. En este informe, se detallarán los
+                principales aspectos a considerar para el desarrollo de la aplicación, incluyendo funcionalidades clave
+                y políticas de monetización.</p>
+        </div>
     </div>
 
     <div class="container" id="eventos">
@@ -36,6 +42,7 @@
                     <h3>Duki</h3>
                     <p>Lugar: Costa 21</p>
                     <p>Fecha: 5 de mayo de 2024</p>
+                    <p>Categoria: Concierto</p>
                 </div>
             </div>
             <!-- Repite esta estructura para cada evento -->
@@ -45,6 +52,7 @@
                     <h3>Carlos Vives</h3>
                     <p>Lugar: Arena 1</p>
                     <p>Fecha: 28 de mayo de 2024</p>
+                    <p>Categoria: Concierto</p>
                 </div>
             </div>
             <div class="event-card">
@@ -53,6 +61,7 @@
                     <h3>Mon Laferte</h3>
                     <p>Lugar: Anfiteatro Parque de la Exposición</p>
                     <p>Fecha: 29 de septiembre 2024</p>
+                    <p>Categoria: Concierto</p>
                 </div>
             </div>
             <div class="event-card">
@@ -61,6 +70,7 @@
                     <h3>Charanga Habanera</h3>
                     <p>Lugar: Fronteras Unidas - Independencia</p>
                     <p>Fecha: 14 de abril de 2024</p>
+                    <p>Categoria: Concierto</p>
                 </div>
             </div>
             <div class="event-card">
@@ -69,6 +79,7 @@
                     <h3>Maná </h3>
                     <p>Lugar: Lima, Perú</p>
                     <p>Fecha: 17 de abril 2024</p>
+                    <p>Categoria: Concierto</p>
                 </div>
             </div>
             <div class="event-card">
@@ -77,9 +88,10 @@
                     <h3>Grupo 5</h3>
                     <p>Lugar: La estancia de Monsefú</p>
                     <p>Fecha: 1 de enero 2025</p>
+                    <p>Categoria: Concierto</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -96,15 +108,72 @@
 
     <div class="container" id="nosotros">
         <h2>Nosotros</h2>
-        <!-- Contenido de la sección "Nosotros" -->
+        <p>MyEvent es una plataforma dedicada a brindar la mejor experiencia en la compra y venta de entradas para una
+            amplia variedad de eventos en Lima y sus alrededores. Nos esforzamos por conectar a los amantes de la
+            música, el entretenimiento y la diversión con los eventos más emocionantes y relevantes.</p>
+        <p>Nuestro equipo está comprometido en proporcionar un servicio confiable, seguro y fácil de usar. Trabajamos en
+            estrecha colaboración con organizadores de eventos y usuarios para asegurarnos de que cada experiencia en
+            MyEvent sea memorable y satisfactoria.</p>
     </div>
 
-    <div class="container" id="registrate">
-        <h2>Regístrate</h2>
-        <!-- Contenido de la sección de registro -->
+    <div class="registro">
+        <div class="form-container">
+            <div class="options">
+                <button class="active" onclick="showRegisterForm()">Registrarse</button>
+                <button onclick="showLoginForm()">Iniciar Sesión</button>
+            </div>
+            <div id="registro-form">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni" pattern="[0-9]{8}"
+                            title="Debe contener 8 dígitos numéricos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" name="contraseña" minlength="8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-contraseña">Repetir Contraseña</label>
+                        <input type="password" id="confirm-contraseña" name="confirm-contraseña" minlength="8" required>
+                    </div>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+            <div id="login-form" style="display: none;">
+                <form>
+                    <div class="form-group">
+                        <label for="login-correo">Correo</label>
+                        <input type="email" id="login-correo" name="login-correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-contraseña">Contraseña</label>
+                        <input type="password" id="login-contraseña" name="login-contraseña" required>
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/imagenes/login.jpg" alt="Imagen">
+        </div>
     </div>
+
 
     <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>
