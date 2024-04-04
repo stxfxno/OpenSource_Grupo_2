@@ -1,0 +1,80 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav a {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.testimonial {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.testimonial p {
+    margin: 10px 0;
+}
+
+
+/* ZONA DE EVENTOS */
+
+/* Estilos para los próximos eventos */
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event-card {
+    width: 45%; /* Ajusta el ancho según sea necesario */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f0f0f0; /* Línea divisoria entre la imagen y la información */
+}
+
+.event-info {
+    padding: 10px;
+}
+
+.event-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.event-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* FIN ZONA EVENTOS */
